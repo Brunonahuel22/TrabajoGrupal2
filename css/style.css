@@ -1,0 +1,12 @@
+
+.navbar{
+    background-color: #0f0826;
+}
+.navImg{
+height: 20px;
+margin-bottom: 90px;
+}
+.navLogo{
+    height: 120px;
+    object-fit: cover;
+}
