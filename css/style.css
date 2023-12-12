@@ -1,15 +1,17 @@
-
-.navbar{
+.navbar {
     background-color: #0f0826;
     position: fixed;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    height: 90px;
 }
-.navImg{
+
+.navImg {
     height: 20px;
-margin-bottom: 145px;
+    margin-bottom: 160px;
 }
-.navLogo{
+
+.navLogo {
     height: 170px;
     object-fit: cover;
 }
