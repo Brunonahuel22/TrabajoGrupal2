@@ -1,6 +1,13 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 footer{
     background-color: #0f0826;
     height: 110px;
+    margin-top: auto;
+
 }
 .imgFooter{
     height: 90px;
