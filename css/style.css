@@ -8,6 +8,16 @@ main{
     flex-grow: 1;
 }
 
-table{
-    border: solid 2px gray;
+table , td , th , tr{
+    border: solid 2px rgb(162, 158, 158);
+    border-collapse: collapse;
+}
+.estrella{
+    color: yellow;
+}
+.tacho{
+    color: gray;
+}
+.lapiz{
+    color: black;
 }
