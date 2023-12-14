@@ -6,6 +6,7 @@ body{
 
 main{
     flex-grow: 1;
+    margin-top: 90px;
 }
 
 table , td , th , tr{
@@ -20,4 +21,23 @@ table , td , th , tr{
 }
 .lapiz{
     color: black;
+}
+
+
+.navbar {
+    background-color: #0f0826;
+    position: fixed;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: 90px;
+}
+
+.navImg {
+    height: 20px;
+    margin-bottom: 160px;
+}
+
+.navLogo {
+    height: 170px;
+    object-fit: cover;
 }
