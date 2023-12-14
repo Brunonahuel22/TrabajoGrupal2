@@ -2,6 +2,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #211747;
 }
 
 main{
@@ -9,8 +10,9 @@ main{
     margin-top: 90px;
 }
 
+
 table , td , th , tr{
-    border: solid 2px rgb(162, 158, 158);
+    border: solid 2px rgb(35, 50, 95);
     border-collapse: collapse;
 }
 .estrella{
