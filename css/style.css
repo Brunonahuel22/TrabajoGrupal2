@@ -5,14 +5,17 @@ body{
 }
 footer{
     background-color: #0f0826;
-    height: 110px;
+    height: 100%;
     margin-top: auto;
-
+    text-align: center;
 }
 .imgFooter{
+    margin-top: 10px;
     height: 90px;
-    margin-left: 80px;
 }
 .textoFooter{
-   margin-top: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
