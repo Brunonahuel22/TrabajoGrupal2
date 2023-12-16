@@ -112,13 +112,12 @@
                   <form class="text-start">
                     <div class="mb-3">
                       <label for="nombre" class="form-label"
-                        >Nombre Pelicula:
+                        >Nombre Pelicula
                       </label>
                       <input
                         type="text"
                         class="form-control"
                         id="nombre"
-                        placeholder="..."
                         minlength="5"
                         maxlength="15"
                         required
@@ -127,36 +126,35 @@
   
                     <!--checkbox-->
                     <div class="mb-3">
-                      <label for="nombre" class="form-label"
-                        >Categoria:
+                      <label for="categoria" class="form-label"
+                        >Categoria
                       </label>
                       <input
                         type="text"
                         class="form-control"
-                        id="nombre"
+                        id="categoria"
                         placeholder="Terror,Aventura,Drama"
                         minlength="5"
                         maxlength="15"
                         required
                       />
                     </div>
-                    
-                    <!--Radio-->
-                    <h6 class="text-center my-4">Está subida la pelicula a la pagina?</h6>
-                    <div class=" d-flex justify-content-around my-4">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="opcionSi" checked>
-                        <label class="form-check-label" for="opcionSi">
-                          Si
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="opcionNo" >
-                        <label class="form-check-label" for="opcionNo">
-                          No
-                        </label>
-                      </div>
+
+                    <div class="mb-3">
+                      <label for="subidoPagina" class="form-label"
+                        >Esta Subido a la pagina? (Si o No)
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subidoPagina"
+                        maxlength="2"
+                        minlength="2"
+                        required
+                      />
                     </div>
+                    
+                   
   
                     <div class="form-floating">
                       <textarea
@@ -164,10 +162,10 @@
                         required
                         minlength="10"
                         maxlength="50"
-                        placeholder="Leave a comment here"
-                        id="floatingTextarea"
+                       
+                        id="descripcion"
                       ></textarea>
-                      <label for="floatingTextarea">Descripcion</label>
+                      <label for="descripcion">Descripcion</label>
                     </div>
   
                     <div class="my-2 text-end">
