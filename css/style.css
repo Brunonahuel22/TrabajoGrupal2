@@ -1,24 +1,50 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 .navbar {
     background-color: #0f0826;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-.imagenNav{
-    width: 40%;
-}
-
-
-nav img {
+    position: fixed;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: 90px;
 }
 
-nav {
-    position: fixed;   
+
+.navImg {
+    height: 20px;
+    margin-bottom: 160px;
 }
 
+.navLogo {
+    height: 170px;
+    object-fit: cover;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: #0f0826;
+    height: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+.imgFooter{
+    margin-top: 10px;
+    height: 90px;
+}
+.textoFooter{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#admin{
+    background-color: #211747;
+}
+
+table , td , th , tr{
+    border: solid 2px rgb(35, 50, 95);
+    border-collapse: collapse;
+}
+
+#mainAdmi{
+    margin-top: 90px;
+}
