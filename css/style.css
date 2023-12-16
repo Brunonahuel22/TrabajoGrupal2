@@ -1,25 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .navbar {
     background-color: #0f0826;
-    position: fixed;
-    width: 100%;
     font-family: 'Montserrat', sans-serif;
-    height: 90px;
 }
 
-
-.navImg {
-    height: 20px;
-    margin-bottom: 160px;
+.imagenNav{
+    width: 10%;
 }
 
-.navLogo {
-    height: 170px;
-    object-fit: cover;
+nav img {
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    
+}
+
+@media all and (min-width:576px) and (max-width:769) {
+    .imagenNav{
+        width: 50%;
+    }
+  
 }
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+main {
+    flex-grow: 1;
 }
 footer{
     background-color: #0f0826;
@@ -35,6 +48,8 @@ footer{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
 #admin{
     background-color: #211747;
