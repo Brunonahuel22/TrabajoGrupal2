@@ -25,14 +25,14 @@
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css" />
     <title>MovieCode</title>
-    <link rel="icon" href="./img/Claqueta.ico" />
+    <link rel="icon" href="../img/Claqueta.ico" />
   </head>
 
-  <body>
+  <body id="admin">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand navImg" href="#"
+          <a class="navbar-brand navImg" href="../index.html"
             ><img
               class="navLogo"
               src="../img/LogoMovieNav.png"
@@ -52,7 +52,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -73,7 +73,198 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main  id="mainAdmi">
+        <h4 class="text-center py-3 text-light">Pagina Administrador</h4>
+        <div class="text-end container">
+          <!-- Boton para modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            Agregar <i class="bi bi-plus-circle-dotted"></i>
+          </button>
+  
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modal"
+            tabindex="-1"
+            aria-labelledby="modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalLabel">
+                    Ingrese los Datos de una Pelicula
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <!--Formulario-->
+                  <form class="text-start">
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label"
+                        >Nombre Pelicula:
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="..."
+                        minlength="5"
+                        maxlength="15"
+                        required
+                      />
+                    </div>
+  
+                    <!--checkbox-->
+                    <h6 class="text-center">Categoria</h6>
+                    <div class="my-2 d-flex justify-content-around">
+                      <div class="form-check">
+                        <label class="form-check-label" for="Terror"
+                          >Terror</label
+                        >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="terror"
+                          id="Terror"
+                          disabled
+                        />
+                      </div>
+  
+                      <div class="form-check">
+                        <label class="form-check-label" for="guerra"
+                          >Guerra</label
+                        >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="guerra"
+                          id="guerra"
+                        />
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="historia"
+                          >Historia</label
+                        >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="historia"
+                          id="historia"
+                        />
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label" for="drama">Drama</label>
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="drama"
+                          id="drama"
+                        />
+                      </div>
+                    </div>
+                    <!--Radio-->
+                    <h6 class="text-center my-4">Está subida la pelicula a la pagina?</h6>
+                    <div class=" d-flex justify-content-around my-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="opcionSi" checked>
+                        <label class="form-check-label" for="opcionSi">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="opcionNo" >
+                        <label class="form-check-label" for="opcionNo">
+                          No
+                        </label>
+                      </div>
+                    </div>
+  
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        required
+                        minlength="10"
+                        maxlength="50"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Descripcion</label>
+                    </div>
+  
+                    <div class="my-2 text-end">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <section class="container">
+          <div class="table-responsive">
+            <table class="table table-striped mt-4 text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Codigo</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Categoria</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Publicado</th>
+                  <th scope="col">Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">313123</th>
+                  <td>Napoleón</td>
+                  <td>Drama Historia Guerra</td>
+                  <td>
+                    <p>
+                      Una mirada personal a los orígenes del líder militar francés
+                      y su rápido y despiadado ascenso a emperador.
+                    </p>
+                  </td>
+                  <td>
+                    <i
+                      <i
+                      class="bi bi-file-earmark-excel-fill fs-4 text-danger"
+                    ></i>
+                  </td>
+                  <td >
+                    <button type="button" title="Editar" class="btn lapiz fs-4">
+                      <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button
+                      type="submit"
+                      title="Destacar"
+                      class="btn estrella fs-4"
+                    >
+                      <i class="bi bi-star-fill"></i>
+                    </button>
+                    <button type="button" title="Eliminar" class="btn tacho fs-4">
+                      <i class="bi bi-trash-fill"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
 
     <footer>
       <div class="container">
