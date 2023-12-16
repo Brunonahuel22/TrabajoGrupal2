@@ -24,7 +24,7 @@
     />
     <!--Link css-->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>MovieCode</title>
+    <title>Administrador</title>
     <link rel="icon" href="../img/Claqueta.ico" />
   </head>
 
@@ -126,53 +126,21 @@
                     </div>
   
                     <!--checkbox-->
-                    <h6 class="text-center">Categoria</h6>
-                    <div class="my-2 d-flex justify-content-around">
-                      <div class="form-check">
-                        <label class="form-check-label" for="Terror"
-                          >Terror</label
-                        >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value="terror"
-                          id="Terror"
-                          disabled
-                        />
-                      </div>
-  
-                      <div class="form-check">
-                        <label class="form-check-label" for="guerra"
-                          >Guerra</label
-                        >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value="guerra"
-                          id="guerra"
-                        />
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label" for="historia"
-                          >Historia</label
-                        >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value="historia"
-                          id="historia"
-                        />
-                      </div>
-                      <div class="form-check">
-                        <label class="form-check-label" for="drama">Drama</label>
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value="drama"
-                          id="drama"
-                        />
-                      </div>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label"
+                        >Categoria:
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="Terror,Aventura,Drama"
+                        minlength="5"
+                        maxlength="15"
+                        required
+                      />
                     </div>
+                    
                     <!--Radio-->
                     <h6 class="text-center my-4">Está subida la pelicula a la pagina?</h6>
                     <div class=" d-flex justify-content-around my-4">
@@ -204,7 +172,7 @@
   
                     <div class="my-2 text-end">
                       <button type="submit" class="btn btn-primary">
-                        Submit
+                        Agregar
                       </button>
                     </div>
                   </form>
@@ -290,5 +258,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="../js/app.js"></script>
   </body>
 </html>
