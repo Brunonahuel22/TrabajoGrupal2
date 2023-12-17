@@ -6,14 +6,18 @@ console.log(formulario);
 //datos formulario
 let nombre = document.getElementById('nombre')  ;
 let categoria = document.getElementById('categoria')  ;
-let descripcion= document.getElementById('descripcion')  ;
-let publicado= document.getElementById('subidoPagina')  ;
+let descripcion= document.getElementById('descripcion');
+let publicado= document.getElementById('subidoPagina');
+const peliculas = [];
 
 function limpiarFormulario() {
     formulario.reset();
 }
+function guardarLocalStore() {
+    localStorage.setItem('pelisKey',JSON.stringify(peliculas));
+}
 
-const peliculas = [];
+
 
 
 function crearContacto(e) {
@@ -27,6 +31,7 @@ const pelicula = new Pelicula(nombre.value , categoria.value , publicado.value ,
 peliculas.push(pelicula);
 console.log(peliculas);
 limpiarFormulario();
+guardarLocalStore();
 
 }
 
