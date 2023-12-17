@@ -9,6 +9,10 @@ let categoria = document.getElementById('categoria')  ;
 let descripcion= document.getElementById('descripcion')  ;
 let publicado= document.getElementById('subidoPagina')  ;
 
+function limpiarFormulario() {
+    formulario.reset();
+}
+
 const peliculas = [];
 
 
@@ -21,7 +25,11 @@ function crearContacto(e) {
 const pelicula = new Pelicula(nombre.value , categoria.value , publicado.value ,descripcion.value);
 
 peliculas.push(pelicula);
-console.log(peliculas)
+console.log(peliculas);
+limpiarFormulario();
+
 }
+
+
 
 formulario.addEventListener('submit',crearContacto);
