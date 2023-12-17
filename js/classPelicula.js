@@ -42,4 +42,13 @@ export class Pelicula{
     set publicado(nuevopu){
         this.#publicado = nuevopu;
     }
+
+    toJSON(){
+        return{
+            nombre: this.nombre,
+            categoria: this.categoria,
+            descripcion: this.descripcion,
+            publicado: this.publicado,
+        };
+    }
 }
